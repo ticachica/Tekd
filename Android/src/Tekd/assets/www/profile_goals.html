@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            profile_goals
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="res/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.min.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="res/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquery/jquery-1.6.4.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/jquery.mobile.iepatch.js">
+        </script>
+        <script type="text/javascript">
+        		        $(document).bind("mobileinit", function()
+		        {
+		            if (navigator.userAgent.indexOf("Android") != -1)
+		            {
+		                $.mobile.defaultPageTransition = 'none';
+		                $.mobile.defaultDialogTransition = 'none';
+		            }
+		        });
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.js">
+        </script>
+        <script type="text/javascript" src="res/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="res/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/tiggzi.js">
+        </script>
+        <script type="text/javascript" src="res/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="res/lib/childbrowser.js">
+        </script>
+        <link href="res/css/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="files/views/assets/js/JavaScript.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="profile_goals" id="j_10" class="type-interior"
+        data-theme='c' data-add-back-btn="true" data-back-btn-text="Back">
+            <div data-role="header" data-position='fixed' data-theme='a' name="mobileheader8"
+            id="j_12" class=' mobileheader2 '>
+                <h1 dsid="mobileheader8">
+                    Tekd
+                </h1>
+            </div>
+            <div data-role="content" id="j_13" name="mobilecontainer8" class="mobilecontainer2"
+            dsid="mobilecontainer8" data-theme='c'>
+                <link href="profile_goals.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="profile_goals.js">
+                </script>
+                <div name="mobilelabel4" id="j_14" dsid="mobilelabel4" data-role="tiggr_label" class=' mobilelabel2 '>
+                    I'd like to...
+                </div>
+                <div data-role="fieldcontain" class="mobilecheckboxgroup1" id="j_15" dsid="mobilecheckboxgroup2">
+                    <fieldset data-role="controlgroup">
+                        <span dsid="mobilecheckbox7" class="mobilecheckbox1">
+                            <input type="checkbox" name="j_16" id="j_16" tabIndex="1" data-theme='c' value="Item 1"
+                            />
+                            <label id="j_16_label" for="j_16">
+                                Start a company
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox8" class="mobilecheckbox2">
+                            <input type="checkbox" name="j_17" id="j_17" data-theme='c' value="Item 2" />
+                            <label id="j_17_label" for="j_17">
+                                Learn to code
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox9" class="mobilecheckbox3">
+                            <input type="checkbox" name="j_18" id="j_18" data-theme='c' value="Item 3" />
+                            <label id="j_18_label" for="j_18">
+                                Learn to design
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox10" class="mobilecheckbox4">
+                            <input type="checkbox" name="j_19" id="j_19" data-theme='c' value="Item 4" />
+                            <label id="j_19_label" for="j_19">
+                                Find collaborators
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox11" class="mobilecheckbox5">
+                            <input type="checkbox" name="j_20" id="j_20" data-theme='c' value="Item 5" />
+                            <label id="j_20_label" for="j_20">
+                                Volunteer
+                            </label>
+                        </span>
+                        <span dsid="mobilecheckbox12" class="mobilecheckbox6">
+                            <input type="checkbox" name="j_21" id="j_21" data-theme='c' value="Item 6" />
+                            <label id="j_21_label" for="j_21">
+                                Meet like minded people
+                            </label>
+                        </span>
+                    </fieldset>
+                </div>
+                <div class="mobilebutton1_wrapper ">
+                    <a data-role="button" name="mobilebutton5" dsid="mobilebutton5" class=' mobilebutton1'
+                    id='j_22' data-corners='true' data-inline='false' data-theme='b' tabIndex="2">
+                    Next
+                    </a>
+                </div>
+            </div>
+            <div data-role="footer" class="mobilefooter2" name="mobilefooter8" dsid="mobilefooter8"
+            data-position="fixed" id="j_23" data-theme='a'>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            profile_designcomp
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="res/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.min.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="res/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquery/jquery-1.6.4.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/jquery.mobile.iepatch.js">
+        </script>
+        <script type="text/javascript">
+        		        $(document).bind("mobileinit", function()
+		        {
+		            if (navigator.userAgent.indexOf("Android") != -1)
+		            {
+		                $.mobile.defaultPageTransition = 'none';
+		                $.mobile.defaultDialogTransition = 'none';
+		            }
+		        });
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.js">
+        </script>
+        <script type="text/javascript" src="res/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="res/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/tiggzi.js">
+        </script>
+        <script type="text/javascript" src="res/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="res/lib/childbrowser.js">
+        </script>
+        <link href="res/css/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="files/views/assets/js/JavaScript.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="profile_designcomp" id="j_0"
+        class="type-interior" data-theme='c' data-add-back-btn="true" data-back-btn-text="Back">
+            <div data-role="header" data-position='fixed' data-theme='a' name="mobileheader10"
+            id="j_2" class=' mobileheader1 '>
+                <h1 dsid="mobileheader10">
+                    Tekd
+                </h1>
+            </div>
+            <div data-role="content" id="j_3" name="mobilecontainer10" class="mobilecontainer1"
+            dsid="mobilecontainer10" data-theme='c'>
+                <link href="profile_designcomp.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="profile_designcomp.js">
+                </script>
+                <div name="mobilelabel6" id="j_4" dsid="mobilelabel6" data-role="tiggr_label" class=' mobilelabel1 '>
+                    When it comes to design, I prefer to...
+                </div>
+                <div class="mobilelist1_wrapper">
+                    <ul data-role="listview" id="j_5" class=' mobilelist1 ' name="mobilelist4" dsid="mobilelist4"
+                    data-inset='true' data-filter-placeholder='' data-theme='c' data-divider-theme='b'
+                    data-count-theme='b' style="">
+                        <li class=' mobilelistitem1 '>
+                            <a id="j_6" name="mobilelistitem13" dsid="mobilelistitem13" tabIndex="1" class=' mobilelistitem1 '>
+                            <h3>Make things beautiful</h3>
+                            </a>
+                        </li>
+                        <li class=' mobilelistitem2 '>
+                            <a id="j_7" name="mobilelistitem14" dsid="mobilelistitem14" tabIndex="1" class=' mobilelistitem2 '>
+                            <h3>Make things useful</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="footer" class="mobilefooter1" name="mobilefooter10" dsid="mobilefooter10"
+            data-position="fixed" id="j_8" data-theme='a'>
+            </div>
+        </div>
+    </body>
+
+</html>

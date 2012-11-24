@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script type="text/javascript">
+         var screen_width = 320;
+ var screen_height = 480;
+        </script>
+        <title>
+            profile_gender
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="files/resources/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.min.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.6.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/jquery.mobile.iepatch.js">
+        </script>
+        <script type="text/javascript">
+        		        $(document).bind("mobileinit", function()
+		        {
+		            if (navigator.userAgent.indexOf("Android") != -1)
+		            {
+		                $.mobile.defaultPageTransition = 'none';
+		                $.mobile.defaultDialogTransition = 'none';
+		            }
+		        });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/tiggzi.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/JavaScript.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="profile_gender" id="j_91"
+        class="type-interior" data-theme='c' data-add-back-btn="true" data-back-btn-text="Back">
+            <div data-role="header" data-position='fixed' data-theme='a' name="mobileheader6"
+            id="j_93" class=' mobileheader6 '>
+                <h1 dsid="mobileheader6">
+                    Tekd
+                </h1>
+            </div>
+            <div data-role="content" id="j_94" name="mobilecontainer6" class="mobilecontainer6"
+            dsid="mobilecontainer6" data-theme='c'>
+                <link href="profile_gender.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="profile_gender.js">
+                </script>
+                <div name="mobilelabel17" id="j_95" dsid="mobilelabel17" data-role="tiggr_label"
+                class=' mobilelabel12 '>
+                    I am...
+                </div>
+                <div class="mobilelist3_wrapper">
+                    <ul data-role="listview" id="j_96" class=' mobilelist3 ' name="mobilelist1" dsid="mobilelist1"
+                    data-inset='true' data-filter-placeholder='' data-theme='c' data-divider-theme='b'
+                    data-count-theme='b' style="">
+                        <li class=' mobilelistitem8  tgz-cg-has-thumbnail'>
+                            <a id="j_97" name="mobilelistitem1" dsid="mobilelistitem1" tabIndex="1" class=' mobilelistitem8 '>
+                            <img  src="files/views/assets/image/male.jpeg" />
+                            <h3>Male</h3>
+                            </a>
+                        </li>
+                        <li class=' mobilelistitem9  tgz-cg-has-thumbnail'>
+                            <a id="j_98" name="mobilelistitem2" dsid="mobilelistitem2" tabIndex="1" class=' mobilelistitem9 '>
+                            <img  src="files/views/assets/image/female.jpeg" />
+                            <h3>Female</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="footer" class="mobilefooter6" name="mobilefooter6" dsid="mobilefooter6"
+            data-position="fixed" id="j_99" data-theme='a'>
+            </div>
+        </div>
+    </body>
+
+</html>

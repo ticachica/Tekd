@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            startScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="res/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.min.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="res/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquery/jquery-1.6.4.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/jquery.mobile.iepatch.js">
+        </script>
+        <script type="text/javascript">
+        		        $(document).bind("mobileinit", function()
+		        {
+		            if (navigator.userAgent.indexOf("Android") != -1)
+		            {
+		                $.mobile.defaultPageTransition = 'none';
+		                $.mobile.defaultDialogTransition = 'none';
+		            }
+		        });
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.js">
+        </script>
+        <script type="text/javascript" src="res/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="res/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/tiggzi.js">
+        </script>
+        <script type="text/javascript" src="res/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="res/lib/childbrowser.js">
+        </script>
+        <link href="res/css/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="files/views/assets/js/JavaScript.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="j_132" class="type-interior"
+        data-theme='c' data-add-back-btn="false" data-back-btn-text="Back">
+            <div data-role="header" data-position='fixed' data-theme='a' name="mobileheader4"
+            id="j_134" class=' mobileheader10 '>
+                <h1 dsid="mobileheader4">
+                    Tekd
+                </h1>
+            </div>
+            <div data-role="content" id="j_135" name="mobilecontainer4" class="mobilecontainer10"
+            dsid="mobilecontainer4" data-theme='c'>
+                <link href="startScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="startScreen.js">
+                </script>
+                <div name="mobilelabel7" id="j_136" dsid="mobilelabel7" data-role="tiggr_label"
+                class=' mobilelabel15 '>
+                    Welcome to Tekd!
+                </div>
+                <div name="mobilelabel10" id="j_137" dsid="mobilelabel10" data-role="tiggr_label"
+                class=' mobilelabel16 '>
+                </div>
+                <div name="mobilelabel8" id="j_138" dsid="mobilelabel8" data-role="tiggr_label"
+                class=' mobilelabel17 '>
+                    Quickly discover groups, classes and programs to help you get looped into tech and
+                    hooked up with mentors, co-founders, and peers.
+                </div>
+                <div name="mobilelabel11" id="j_139" dsid="mobilelabel11" data-role="tiggr_label"
+                class=' mobilelabel18 '>
+                </div>
+                <div name="mobilelabel9" id="j_140" dsid="mobilelabel9" data-role="tiggr_label"
+                class=' mobilelabel19 '>
+                    Are you ready to get Tekd?
+                </div>
+                <div data-role="fieldcontain" class="mobiletextinput1">
+                    <input type="text" name="mobiletextinput1" dsid="mobiletextinput1" id="j_141" value="Enter your name"
+                    tabIndex="1" data-theme='c' class=' mobiletextinput1 ' />
+                </div>
+                <div class="mobilebutton8_wrapper ">
+                    <a data-role="button" name="mobilebutton6" dsid="mobilebutton6" class=' mobilebutton8'
+                    id='j_142' data-corners='true' data-inline='false' data-theme='b' tabIndex="2">
+                    Get Tekd!
+                    </a>
+                </div>
+                <div class="j_143_link_wrapper">
+                    <a id="j_143" href="https://docs.google.com/spreadsheet/viewform?fromEmail=true&amp;formkey=dEFSTS12QmNPYk1hVDJrX1RkYU9lMEE6MQ"
+                    name="mobilelink1" dsid="mobilelink1" class=' mobilelink1 '>
+                    Submit your tech ed program here
+                    </a>
+                </div>
+            </div>
+            <div data-role="footer" class="mobilefooter10" name="mobilefooter4" dsid="mobilefooter4"
+            data-position="fixed" id="j_144" data-theme='a'>
+            </div>
+        </div>
+    </body>
+
+</html>

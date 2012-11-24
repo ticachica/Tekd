@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            profile_Age
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="res/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.min.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="res/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquery/jquery-1.6.4.js">
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/jquery.mobile.iepatch.js">
+        </script>
+        <script type="text/javascript">
+        		        $(document).bind("mobileinit", function()
+		        {
+		            if (navigator.userAgent.indexOf("Android") != -1)
+		            {
+		                $.mobile.defaultPageTransition = 'none';
+		                $.mobile.defaultDialogTransition = 'none';
+		            }
+		        });
+        </script>
+        <script type="text/javascript" src="res/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.js">
+        </script>
+        <script type="text/javascript" src="res/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="res/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="res/lib/base/tiggzi.js">
+        </script>
+        <script type="text/javascript" src="res/lib/cordova.js">
+        </script>
+        <script type="text/javascript" src="res/lib/childbrowser.js">
+        </script>
+        <link href="res/css/mobilebase.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="files/views/assets/js/JavaScript.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="profile_Age" id="j_108" class="type-interior"
+        data-theme='c' data-add-back-btn="true" data-back-btn-text="Back">
+            <div data-role="header" data-position='fixed' data-theme='a' name="mobileheader5"
+            id="j_110" class=' mobileheader8 '>
+                <h1 dsid="mobileheader5">
+                    Tekd
+                </h1>
+            </div>
+            <div data-role="content" id="j_111" name="mobilecontainer5" class="mobilecontainer8"
+            dsid="mobilecontainer5" data-theme='c'>
+                <link href="profile_Age.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="profile_Age.js">
+                </script>
+                <div name="mobilelabel18" id="j_112" dsid="mobilelabel18" data-role="tiggr_label"
+                class=' mobilelabel13 '>
+                    And I am...
+                </div>
+                <div class="mobilelist4_wrapper">
+                    <ul data-role="listview" id="j_113" class=' mobilelist4 ' name="mobilelist2" dsid="mobilelist2"
+                    data-inset='true' data-filter-placeholder='' data-theme='c' data-divider-theme='b'
+                    data-count-theme='b' style="">
+                        <li class=' mobilelistitem10  tgz-cg-has-thumbnail'>
+                            <a id="j_114" name="mobilelistitem5" dsid="mobilelistitem5" tabIndex="1" class=' mobilelistitem10 '>
+                            <img  src="files/views/assets/image/kids-computer.jpeg" />
+                            <h3>Under 18 years old</h3>
+                            </a>
+                        </li>
+                        <li class=' mobilelistitem11  tgz-cg-has-thumbnail'>
+                            <a id="j_115" name="mobilelistitem6" dsid="mobilelistitem6" tabIndex="1" class=' mobilelistitem11 '>
+                            <img  src="files/views/assets/image/Data%252BEntry%252BGraphic%252BW.jpeg" />
+                            <h3>18 to 30 years old</h3>
+                            </a>
+                        </li>
+                        <li class=' mobilelistitem12  tgz-cg-has-thumbnail'>
+                            <a id="j_116" name="mobilelistitem7" dsid="mobilelistitem7" tabIndex="1" class=' mobilelistitem12 '>
+                            <img  src="files/views/assets/image/happy-man-looking-at-computer-Small.jpeg" />
+                            <h3>31 to 50 years old</h3>
+                            </a>
+                        </li>
+                        <li class=' mobilelistitem13  tgz-cg-has-thumbnail'>
+                            <a id="j_117" name="mobilelistitem8" dsid="mobilelistitem8" tabIndex="1" class=' mobilelistitem13 '>
+                            <img  src="files/views/assets/image/grandma-on-computer.jpeg" />
+                            <h3>Over 50 years old</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="footer" class="mobilefooter8" name="mobilefooter5" dsid="mobilefooter5"
+            data-position="fixed" id="j_118" data-theme='a'>
+            </div>
+        </div>
+    </body>
+
+</html>

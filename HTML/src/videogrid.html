@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script type="text/javascript">
+         var screen_width = 320;
+ var screen_height = 480;
+        </script>
+        <title>
+            videogrid
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="files/resources/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.min.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.6.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/jquery.mobile.iepatch.js">
+        </script>
+        <script type="text/javascript">
+        		        $(document).bind("mobileinit", function()
+		        {
+		            if (navigator.userAgent.indexOf("Android") != -1)
+		            {
+		                $.mobile.defaultPageTransition = 'none';
+		                $.mobile.defaultDialogTransition = 'none';
+		            }
+		        });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/tiggzi.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/JavaScript.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="videogrid" id="j_53" class="type-interior"
+        data-theme='c' data-add-back-btn="true" data-back-btn-text="Back">
+            <div data-role="header" data-position='fixed' data-theme='a' name="mobileheader1"
+            id="j_55" class=' mobileheader5 '>
+                <h1 dsid="mobileheader1">
+                    Tekd
+                </h1>
+            </div>
+            <div data-role="content" id="j_56" name="mobilecontainer1" class="mobilecontainer5"
+            dsid="mobilecontainer1" data-theme='c'>
+                <link href="videogrid.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="videogrid.js">
+                </script>
+                <div name="mobilelabel22" id="j_57" dsid="mobilelabel22" data-role="tiggr_label"
+                class=' mobilelabel5 '>
+                    My ideal learning environment is most like...
+                </div>
+                <div class="mobilegrid1_wrapper">
+                    <table id="j_58" class="mobilegrid1" dsid="mobilegrid1" name="mobilegrid1" cellpadding=0
+                    cellspacing=0>
+                        <col style="width:51.6%;">
+                            <col style="width:48.4%;">
+                                <tr>
+                                    <td id="j_59" name="mobilegridcell1" class="mobilegridcell1" colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <div class="mobileimage1_div">
+                                                <img class="mobileimage1" src="files/views/assets/image/tout1.jpg" id="j_60" dsid="mobileimage1"
+                                                name="mobileimage1" />
+                                            </div>
+                                            <div name="videoid" id="j_61" dsid="videoid" data-role="tiggr_label" class=' mobilelabel6 '>
+                                                1
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="j_62" name="mobilegridcell2" class="mobilegridcell2" colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <div class="mobileimage2_div">
+                                                <img class="mobileimage2" src="files/views/assets/image/profile_1_male.jpg" id="j_63"
+                                                dsid="mobileimage2" name="mobileimage2" />
+                                            </div>
+                                            <div name="videoid1" id="j_64" dsid="videoid1" data-role="tiggr_label" class=' mobilelabel7 '>
+                                                2
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="j_65" name="mobilegridcell3" class="mobilegridcell3" colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <div class="mobileimage3_div">
+                                                <img class="mobileimage3" src="files/views/assets/image/profile_2_male.jpg" id="j_66"
+                                                dsid="mobileimage3" name="mobileimage3" />
+                                            </div>
+                                            <div name="videoid2" id="j_67" dsid="videoid2" data-role="tiggr_label" class=' mobilelabel8 '>
+                                                3
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="j_68" name="mobilegridcell4" class="mobilegridcell4" colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <div class="mobileimage4_div">
+                                                <img class="mobileimage4" src="files/views/assets/image/face3_female.jpg" id="j_69"
+                                                dsid="mobileimage5" name="mobileimage5" />
+                                            </div>
+                                            <div name="videoid3" id="j_70" dsid="videoid3" data-role="tiggr_label" class=' mobilelabel9 '>
+                                                4
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                    </table>
+                </div>
+                <div class="mobilegrid2_wrapper">
+                    <table id="j_71" class="mobilegrid2" dsid="mobilegrid2" name="mobilegrid2" cellpadding=0
+                    cellspacing=0>
+                        <col style="width:16.4%;">
+                            <col style="width:20.7%;">
+                                <col style="width:21.3%;">
+                                    <col style="width:20%;">
+                                        <col style="width:21.6%;">
+                                            <tr>
+                                                <td id="j_72" name="mobilegridcell5" class="mobilegridcell5" colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <div name="mobilelabel28" id="j_73" dsid="mobilelabel28" data-role="tiggr_label"
+                                                        class=' mobilelabel10 '>
+                                                            Like?
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td id="j_74" name="mobilegridcell6" class="mobilegridcell6" colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <div class="mobilebutton3_wrapper ">
+                                                            <a data-role="button" name="mobilebutton2" dsid="mobilebutton2" class=' mobilebutton3'
+                                                            id='j_75' data-corners='true' data-inline='true' data-theme='a' tabIndex="1">
+                                                            1
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td id="j_76" name="mobilegridcell7" class="mobilegridcell7" colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <div class="mobilebutton4_wrapper ">
+                                                            <a data-role="button" name="mobilebutton4" dsid="mobilebutton4" class=' mobilebutton4'
+                                                            id='j_77' data-corners='true' data-inline='true' data-theme='a' tabIndex="2">
+                                                            2
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td id="j_78" name="mobilegridcell8" class="mobilegridcell8" colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <div class="mobilebutton5_wrapper ">
+                                                            <a data-role="button" name="mobilebutton5" dsid="mobilebutton5" class=' mobilebutton5'
+                                                            id='j_79' data-corners='true' data-inline='false' data-theme='a' tabIndex="3">
+                                                            3
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td id="j_80" name="mobilegridcell9" class="mobilegridcell9" colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <div class="mobilebutton6_wrapper ">
+                                                            <a data-role="button" name="mobilebutton6" dsid="mobilebutton6" class=' mobilebutton6'
+                                                            id='j_81' data-corners='true' data-inline='true' data-theme='a' tabIndex="4">
+                                                            4
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                    </table>
+                </div>
+                <div name="status" id="j_82" dsid="status" data-role="tiggr_label" class=' mobilelabel11 '>
+                </div>
+            </div>
+            <div data-role="footer" class="mobilefooter5" name="mobilefooter1" dsid="mobilefooter1"
+            data-position="fixed" id="j_83" data-theme='a'>
+            </div>
+        </div>
+    </body>
+
+</html>
